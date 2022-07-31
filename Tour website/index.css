@@ -6,7 +6,7 @@
     color: black;
 }
 
-.cann        {
+.cann {
     color: azure;
 }
 
@@ -85,7 +85,7 @@ section {
     -webkit-transform: translate(-50%);
     -ms-transform: translate(-50%);
     transform: translate(-50%);
-  
+
 
 }
 
@@ -95,27 +95,70 @@ section {
     transform: scale(1.08);
 }
 
-.theme_btn h1{
-  font-style: italic, cursive;
-  font-size: 2vw;
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.74);
-
-}
-.theme_btn i{
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.74);
+.theme_btn h1 {
+    font-style: italic, cursive;
+    font-size: 2vw;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.74);
 
 }
 
+.theme_btn i {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.74);
 
-.hotel_img{
-  -webkit-transition: all 0.4s linear;
+}
+
+
+.hotel_img {
+    -webkit-transition: all 0.4s linear;
     -o-transition: all 0.4s linear;
     transition: all 0.4s linear;
 }
-.hotel_img img:hover{
-   opacity: 0.8;
-  
-  }
-  .accomodation_item{
+
+.hotel_img img:hover {
+    opacity: 0.8;
+
+}
+
+.accomodation_item {
     background-color: rgb(106, 240, 250);
-  }
+}
+
+header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.553);
+    opacity: 0.5;
+    z-index: 1;
+}
